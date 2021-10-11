@@ -1,0 +1,474 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    text-transform: capitalize;
+    transition: 400ms;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: 'Times New Roman',"GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+a
+{
+	color: #000;
+    display: inline-block;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #777;
+    font-size: 15px;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+::placeholder {
+    color: #9B9B9B;
+}
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgb(226, 223, 223);
+}
+a.button {
+    padding: 10px 15px;
+    color: #fff;
+    background: #7eb473;
+    border: 1px solid #7eb473;
+    border-radius: 8px;
+}
+a.button:hover {
+    color: #7eb473;
+    background: #fff;
+}
+header h1 {
+
+}
+header h1 span {
+    color: #7eb473;
+}
+header form {
+    box-shadow: 1px 1px 10px #777;
+    border-radius: 4px;
+    padding: 10px;
+    background: #fff;
+}
+header form i {
+    color: #7eb473;
+}
+header ul {
+    display: flex;
+    align-items: center;
+}
+header ul li {
+    margin-right: 20px;
+}
+header ul li a {
+    font-size: 14px;
+    font-weight: 600;
+}
+header ul li:last-child {
+    margin-right: 0;
+}
+header a.wishlist {
+    display: inline-block;
+    padding: 10px 12px;
+    background: #fff;
+    box-shadow: 1px 1px 10px #777;
+    border-radius: 10px;
+}
+header a.wishlist i {
+    color: #7eb473;
+    font-size: 24px;
+}
+header a.cart {
+    display: inline-block;
+    padding: 10px 12px;
+    background: #fff;
+    box-shadow: 1px 1px 10px #777;
+    border-radius: 10px;
+}
+header a.cart i {
+    color: #7eb473;
+    font-size: 24px;
+}
+#spotlight {
+    padding: 50px 0;
+}
+#spotlight .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#spotlight section.left {
+    width: 40%;
+    padding: 0 24px;
+    position: relative;
+}
+#spotlight section.left  div.image-container{
+    width: 93%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#spotlight section.left  div.image-container img{
+    display: block;
+    width: 100%;
+}
+#spotlight section.left  div.image-container-slide {
+    width: 10%;
+}
+#spotlight section.left  div.image-container-slide img {
+    display: block;
+    width: 100%;
+}
+#spotlight .heart {
+    color: #fff;
+    font-size: 28px;
+    position: absolute;
+    right: 9%;
+    top: 2%;
+}
+div.slider.slider-single.slick-initialized.slick-slider {
+    height: 70vh
+}
+div.zoomContainer {
+    height: 400px !important;
+    width: 200px !important;
+}
+div.zoomtint {
+    width: 400px !important;
+    height: 300px !important;
+}
+#page .row .column .slider .slick-list .slick-track {
+    width: 300px;
+}
+#spotlight .right {
+    width: 60%;
+    box-shadow: 0px 0px 10px 1px #777;
+    border-radius: 2px;
+    overflow: hidden;
+    padding: 30px;
+}
+#spotlight .right div.product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#spotlight .right div.product div.details {
+
+}
+#spotlight .right div.product div.details h2 {
+    font-size: 28px;
+}
+#spotlight .right div.product div.details h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #777;
+}
+#spotlight .right div.product div.details div.colors {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+#spotlight .right div.product div.details div.colors span {
+    margin-right: 30px;
+}
+#spotlight .right div.product div.details div.colors ul {
+    display: flex;
+}
+#spotlight .right div.product div.details div.colors ul li {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: .5px solid rgb(177, 174, 174);
+}
+#spotlight .right div.product div.details label {
+    margin-right: 10px;
+}
+#spotlight .right div.product div.details button.inc {
+    background: #bbb4b4;
+    border: 1px solid #777;
+    width: 15px;
+}
+#spotlight .right div.product div.details button.dec {
+    background: #bbb4b4;
+    border: 1px solid #777;
+    width: 15px;
+}
+#spotlight .right div.product div.details input {
+    border: 1px solid;
+    margin-top: 20px;
+    width: 20%;
+}
+#spotlight .right div.product div.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#spotlight .right div.product div.price span {
+    font-weight: 600;
+}
+#spotlight .right div.product div.price small {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #7eb473;
+    text-decoration: line-through;
+}
+#spotlight .right div.product div.price div.box {
+    font-size: 14px;
+    margin-top: 10px;
+    background: #7eb473;
+    color: #fff;
+    width: 50px;
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+}
+#spotlight .right div.product div.price div.box i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+hr.line {
+    margin: 30px auto 0;
+    border: 1px double rgb(173, 173, 173);
+}
+#spotlight .right div.offers {
+
+}
+#spotlight .right div.offers h2 {
+    margin-top: 15px;
+}
+#spotlight .right div.offers p {
+    margin-top: 10px;
+}
+#spotlight .right div.offers p i {
+    color: #7eb473;
+    margin-right: 5px;
+}
+#spotlight .right div.rating {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+#spotlight .right div.rating div.left-end {
+
+}
+#spotlight .right div.rating div.left-end h3 {
+    
+}
+#spotlight .right div.rating div.left-end h4 {
+    margin-top: 15px;
+    font-weight: 600;
+}
+#spotlight .right div.rating div.left-end h4 i {
+    color: #FFD700;
+    font-size: 16px;
+    margin-left: 5px;
+}
+#spotlight .right div.rating div.left-end small {
+    display: inline-block;
+    margin-top: 15px;
+}
+#spotlight .right div.rating div.right-list {
+
+}
+#spotlight .right div.rating div.right-list {
+
+}
+#spotlight .right div.rating div.right-list ul {
+    display: flex;
+}
+#spotlight .right div.rating div.right-list ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#spotlight .right div.rating div.right-list ul li span {
+    height: 80px;
+    width: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#spotlight .right div.rating div.right-list ul li h6.rotate {
+    transform: rotate(270deg);
+}
+#spotlight .right div.rating div.right-list ul li i {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#spotlight .right div.rating  hr.vertical {
+    border: 1px solid #777;
+    width: 15%;
+    margin: aut;
+    transform: rotate(270deg);
+}
+#spotlight .right div.rating div.right-buttons {
+    width: 30%;
+    margin-left: 30px;
+    text-align: center;
+}
+#spotlight .right div.rating div.right-buttons a {
+    display: block;
+    margin-bottom: 20px;
+}
+#spotlight .right div.rating div.right-buttons a:last-child {
+    margin-bottom: 0;
+}
+#spotlight .right div.review {
+    margin-top: 10px;
+}
+#spotlight .right div.review div.viewer {
+    display: flex;
+    align-items: end;
+}
+#spotlight .right div.review div.viewer small {
+    font-size: 14px;
+    margin-top: 10px;
+    background: #7eb473;
+    color: #fff;
+    width: 50px;
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+}
+#spotlight .right div.review div.viewer small  i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+#spotlight .right div.review div.viewer span {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#spotlight .right div.review p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+#spotlight .right a.button.bg {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+footer {
+    background: #5a3131;
+    color: #fff;
+}
+footer .top h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+footer .top ul.home {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-top: 20px;
+}
+footer .top ul.home li {
+    margin-right: 50px;
+}
+footer .top ul.home li:last-child {
+    margin-right:0;
+}
+footer .top ul.home li a {
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer .top ul.web {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-top: 30px;
+}
+footer .top ul.web li {
+    margin-right: 70px;
+}
+footer .top ul.web li:last-child {
+    margin-right: 0;
+}
+footer .top ul.web li a {
+    display: inline-block;
+    padding: 10px 12px;
+    background: #6b4545;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+footer .top ul.web li a i {
+    color: #fff;
+}
+footer .top hr.line {
+    border: 1px solid #777;
+    margin-top: 30px;
+}
+footer .bottom {
+    padding: 10px 0;
+    text-align: center;
+}
+footer .bottom p {
+    color: #fff;
+    font-size: 14px;
+}
+footer .bottom p a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
